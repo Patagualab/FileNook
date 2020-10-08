@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>FileNook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <script type='text/javascript'  src='js/miscripts.js'></script>
+        <script>
+           pswigual();
+        </script>
+    </head>
+    <body >
+        <div class="content">
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="index.html" class="logo"><img id="imagenlogo" src="imagenes/LOGO.png" alt="Imagen logo">FILENOOK</a>
+            </div>
+        </header>
+            <main class="main">
+                <div class="container">
+                    <form class="pag-registro" method="post" action="/registroSV" onSubmit="return pswigual()">
+                        <h1>Página de Registro</h1>
+                        <hr>
+                            <label for="email"><b>Email</b></label>
+                            <input class="input" type="text" placeholder="Email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="email" required>
+
+                            <label for="nom">Nombre</label>
+                            <input class="input" type="text" placeholder="Nombre" name="nom" required >
+                            
+                            <label for="ape">Apellidos</label>
+                            <input class="input" type="text" placeholder="Apellidos" name="ape" required >
+
+                            <label for="usr">Usuario</label>
+                            <input class="input" type="text" placeholder="Usuario" name="usr" required >
+
+                            <label for="psw"><b>Contraseña</b></label>
+                            <input class="input" type="password" id="passwd" placeholder="Contraseña"  name="psw" required>
+
+                            <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+                            <input class="input" type="password" id="passwd2" placeholder="Repetir Contraseña" name="pswrepeat" required>
+
+                            <div class="clearfix">
+                                <button type="submit" class="signupbtn">Registrarse</button>
+                            </div>
+                            <label>¿Ya tienes cuenta? <a href="inicioSesion.html">Inicia Sesión</a>
+                    </form>
+                </div>
+            </main>
+            </div>
+            <footer class="footer">
+              © Proyecto Filenook - 2019 - Andrés Cabero Mata -  Patricia Aguado Labrador - Rafael Higelmo San Millán - Santiago Blasco Arnaiz
+            </footer>
+       
+       
+        
+       
+    </body>
+</html>
